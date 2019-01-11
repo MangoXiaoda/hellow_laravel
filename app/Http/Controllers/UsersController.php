@@ -46,4 +46,10 @@ class UsersController extends Controller
     }
 
 
+    // 修改
+    public function edit(User $user)
+    {
+        return view('users.edit', compact('user'));
+    }
+
 }

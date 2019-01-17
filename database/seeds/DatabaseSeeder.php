@@ -16,6 +16,9 @@ class DatabaseSeeder extends Seeder
 
         $this->call(UsersTableSeeder::class);
 
+        // 填充微博数据
+        $this->call(StatusesTableSeeder::class);
+
         Model::reguard();
     }
 }

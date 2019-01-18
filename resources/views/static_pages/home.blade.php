@@ -14,14 +14,17 @@
         <section class="user_info">
           @include('shared._user_info', ['user' => Auth::user()])
         </section>
+        <section class="stats">
+          @include('shared._stats', ['user' => Auth::user()])
+        </section>
       </aside>
     </div>
   @else
     <div class="jumbotron">
       <h1>Hello Laravel</h1>
-      <p class="lead">
+      {{-- <p class="lead">
         你现在所看到的是 <a href="https://laravel-china.org/courses/laravel-essential-training-5.5">Laravel 入门教程</a> 的项目主页。
-      </p>
+      </p> --}}
       <p>
         一切，将从这里开始。
       </p>
